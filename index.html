@@ -13,9 +13,17 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#1a365d">
     <title>AppexInsurance - Reliable Auto Insurance Coverage | Get Your Free Quote</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload and load main stylesheet -->
+    <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+
+    <!-- Preload and load Google Fonts (replace with your actual font if different) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    </noscript>
+
     <link rel="icon" href="icon.webp">
 </head>
 <body>
